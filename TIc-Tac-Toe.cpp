@@ -74,7 +74,7 @@ void drawBord(char *spaces) {
 void playerMove(char *spaces, char player) {
 	int number;
 	do {
-		cout << "Enter a spot to place amarker (1-9): ";
+		cout << "Enter a spot to place a marker (1-9): ";
 		cin >> number;
 		number--;
 		if (spaces[number] == ' ') {
