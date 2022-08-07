@@ -34,8 +34,12 @@ void drawBord(char *spaces) {
 	for (int i = 0; i < 9; i += 3) {
 		cout << "     |     |     " << '\n';
 		cout << "  " << spaces[i] << "  |  " << spaces[i + 1] << "  |  " << spaces[i + 2] << "  \n";
-		cout << "_____|_____|_____" << '\n';
-		
+		if (i < 6) {
+			cout << "_____|_____|_____" << '\n';
+		}
+		else {
+			cout << "     |     |     " << '\n';
+		}
 	}
 	cout << "\n";
 }
